@@ -1,3 +1,7 @@
 .idea/
 venv/
 __pycache__
+
+website/secret.py
+
+mysite/static/
