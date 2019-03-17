@@ -1,6 +1,19 @@
-<div class="jumbotron bg-light text-dark" id="Projects">
-    <div class="jumbotron-margin">
+{% extends 'mysite/jumbotron-base-light.html' %}
+{% load static %}
+{% block content %}
+    {% with name='Projects' %}
+
+        {{ block.super }}
         <h2 class="display-4">Personal projects</h2>
-        <p class="lead"> Put personal projects here</p>
-    </div>
-</div>
+
+            <div class="card" style="width: 25%">
+                <img class="card-img-top" src="{% static 'images/snowdepth_icon.jpg' %}" alt="Card image cap" width="100">
+                <div class="card-body">
+                    <h5 class="card-title">Animating Snow Depth in Finland</h5>
+                    <p class="card-text"> Description here</p>
+                    <a href="http://github.com/Altesmi/SnowDepthInFinland" class="card-link">See the code</a>
+
+                </div>
+            </div>
+    {% endwith %}
+{% endblock %}

@@ -1,6 +1,9 @@
-<div class="jumbotron bg-dark text-white" id="Research">
-    <div class="jumbotron-margin">
-        <h2 class="display-4">Research</h2>
-        <p class="lead"> Put research info here</p>
-    </div>
-</div>
+{% extends 'mysite/jumbotron-base-light.html' %}
+{% block content %}
+       {% with name='Research' %}
+
+        {{ block.super }}
+    <h2 class="display-4">Research</h2>
+    <p class="lead"> Put research info here</p>
+    {% endwith %}
+{% endblock %}
