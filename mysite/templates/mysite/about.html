@@ -1,11 +1,20 @@
 {% load static %}
-
-<div class="jumbotron jumbotron-fluid">
-    <section class="py-5">
+<div class="jumbotron bg-white text-dark" id="About">
+    <div class="jumbotron-margin">
         <div class="container">
-            <h1 class="display-4">About me</h1>
 
+            <h1 class="display-4">About Me</h1>
+            <div class="row">
+
+                <div class="col-md-8"><p class="lead">
+                    I am a junior researcher and a PhD student at the University of Eastern Finland.
+                </p></div>
+                <div class="col-md-4">
+                    <div class="imgAbt">
+                        <img width="200" height="200" src="{% static 'images/profile.jpg' %}"/>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 </div>
-
