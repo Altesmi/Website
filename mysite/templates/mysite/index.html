@@ -1,18 +1,10 @@
-{% extends 'mysite/stage.html' %}
+{% include 'mysite/header.html' %}
 
-{% block front %}
-
-    <div class="container">
-        <div class="row" style="margin-top: 40%;">
-            <div class="mx-auto" style="font-size: 52px; text-shadow: 3px 3px #000000; font-family: 'Prosto One', cursive; color: #FFFFFF;
-text-align: center;">
-                Olli-Pekka Tikkanen
-                <div style="font-size: 24px; text-shadow: 2px 2px #000000">
-                    <i>Atmospheric scientist, computational physicist, data science enthusiast</i>
-                </div>
-            </div>
-        </div>
-    </div>
+{% include 'mysite/title.html' %}
 
 
-{% endblock %}
+{% comment %}
+
+{% include 'mysite/about.html' %}
+
+{% include 'mysite/footer.html' %}{% endcomment %}
