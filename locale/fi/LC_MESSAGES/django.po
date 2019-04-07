@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-07 17:31+0300\n"
+"POT-Creation-Date: 2019-04-07 17:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\mysite\templates\mysite\about.html:8
+
+#| msgid "About"
+msgid "About me"
+msgstr "Minusta"
+
+#: .\mysite\templates\mysite\contact.html:9
+#: .\mysite\templates\mysite\header.html:74
+msgid "Contact"
+msgstr "Yhteystiedot"
 
 #: .\mysite\templates\mysite\header.html:57
 msgid "Home"
@@ -26,6 +37,7 @@ msgid "About"
 msgstr "Minusta"
 
 #: .\mysite\templates\mysite\header.html:65
+#: .\mysite\templates\mysite\research.html:7
 msgid "Research"
 msgstr "Tutkimus"
 
@@ -37,9 +49,9 @@ msgstr "Projektit"
 msgid "Blog"
 msgstr "Blogi"
 
-#: .\mysite\templates\mysite\header.html:74
-msgid "Contact"
-msgstr "Yhteystiedot"
+#: .\mysite\templates\mysite\projects.html:8
+msgid "Personal projects"
+msgstr "Projektit"
 
 #: .\mysite\templates\mysite\title.html:9
 msgid "Atmospheric scientist, computational physicist, data science enthusiast"

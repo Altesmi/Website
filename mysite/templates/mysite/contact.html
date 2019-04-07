@@ -1,15 +1,17 @@
 {% extends 'mysite/jumbotron-base-dark.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
+
     {% with name='Contact' %}
 
         {{ block.super }}
-        <h2 class="display-4" id="Contact">Contact</h2>
+        <h2 class="display-4" id="Contact">{% trans "Contact" %}</h2>
         <div class="row">
             <div class="col-md-3"><a href="mailto:optikkanen@gmail.com"><img src="{% static 'images/email-logo.png' %}"/>optikkanen@gmail.com </a> </div>
             <div class="col-md-3"><a href="http://twitter.com/optikkanen" target="_blank"><img
                     src="{% static 'images/twitter-logo-grey.png' %}"/>@optikkanen</a></div>
-            <div class="col-md-3"><a href="github.com/Altesmi" target="_blank"><img
+            <div class="col-md-3"><a href="http://github.com/Altesmi" target="_blank"><img
                     src="{% static 'images/GitHub-Mark.png' %}"/>@Altesmi</a></div>
             <div class="col-md-3"><a href="https://www.linkedin.com/in/optikkanen/" target="_blank">
                 <img src="{% static 'images/linkedin.png' %}"/>Optikkanen</a>

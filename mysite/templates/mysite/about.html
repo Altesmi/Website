@@ -1,10 +1,11 @@
 {% extends 'mysite/jumbotron-base-light.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
     {% with name='About' %}
 
         {{ block.super }}
-        <h1 class="display-4">About Me</h1>
+        <h1 class="display-4">{% trans "About me" %}</h1>
         <div class="row">
 
             <div class="col-md-8"><p class="lead">

@@ -1,10 +1,11 @@
 {% extends 'mysite/jumbotron-base-light.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
     {% with name='Projects' %}
 
         {{ block.super }}
-        <h2 class="display-4">Personal projects</h2>
+        <h2 class="display-4">{% trans "Personal projects" %}</h2>
 
             <div class="card" style="width: 25%">
                 <img class="card-img-top" src="{% static 'images/snowdepth_icon.jpg' %}" alt="Card image cap" width="100">

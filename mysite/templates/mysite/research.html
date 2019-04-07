@@ -1,9 +1,10 @@
 {% extends 'mysite/jumbotron-base-light.html' %}
+{% load i18n %}
 {% block content %}
        {% with name='Research' %}
 
         {{ block.super }}
-    <h2 class="display-4">Research</h2>
+    <h2 class="display-4">{% trans "Research" %}</h2>
     <p class="lead"> Put research info here</p>
     {% endwith %}
 {% endblock %}
