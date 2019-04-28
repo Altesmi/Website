@@ -5,3 +5,5 @@ __pycache__
 website/secret.py
 
 mysite/static/
+
+db.sqlite3

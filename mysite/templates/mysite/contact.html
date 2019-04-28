@@ -8,14 +8,18 @@
         {{ block.super }}
         <h2 class="display-4" id="Contact">{% trans "Contact" %}</h2>
         <div class="row">
-            <div class="col-md-3"><a href="mailto:optikkanen@gmail.com"><img src="{% static 'images/email-logo.png' %}"/>optikkanen@gmail.com </a> </div>
-            <div class="col-md-3"><a href="http://twitter.com/optikkanen" target="_blank"><img
+        <style>
+            a:hover {text-decoration: none}
+        </style>
+            <div class="col-md-3"><a class="text-light"href="mailto:optikkanen@gmail.com"><img src="{% static 'images/email-logo.png' %}"/>optikkanen@gmail.com </a> </div>
+            <div class="col-md-3"><a class="text-light"href="http://twitter.com/optikkanen" target="_blank"><img
                     src="{% static 'images/twitter-logo-grey.png' %}"/>@optikkanen</a></div>
-            <div class="col-md-3"><a href="http://github.com/Altesmi" target="_blank"><img
-                    src="{% static 'images/GitHub-Mark.png' %}"/>@Altesmi</a></div>
-            <div class="col-md-3"><a href="https://www.linkedin.com/in/optikkanen/" target="_blank">
-                <img src="{% static 'images/linkedin.png' %}"/>Optikkanen</a>
-            </a></div>
+            <div class="col-md-3"><a class="text-light"href="http://github.com/altesmi" target="_blank"><img
+                    src="{% static 'images/GitHub-Mark.png' %}"/>@altesmi</a></div>
+            <div class="col-md-3"><a class="text-light" href="https://www.linkedin.com/in/optikkanen/" target="_blank">
+                <img src="{% static 'images/linkedin.png' %}"/>optikkanen</a>
+            </div>
+
         </div>
     {% endwith %}
 {% endblock %}
